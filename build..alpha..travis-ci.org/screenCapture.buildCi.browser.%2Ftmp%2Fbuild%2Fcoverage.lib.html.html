@@ -1,7 +1,5 @@
-<!doctype html>
-<html lang="en">
-<head>
-    <title>Code coverage report for node-npmtest-mime-types/mime-types/index.js</title>
+<html lang="en"><head>
+    <title>Code coverage report for node-npmtest-mime-types/node_modules/mime-types/index.js</title>
     <meta charset="utf-8">
     <style>
         body, html {
@@ -194,7 +192,7 @@
     <h1 style="font-weight: bold;">
         <a href="https://github.com/npmtest/node-npmtest-mime-types">npmtest-mime-types (v0.0.1)</a>
     </h1>
-    <h1>Code coverage report for <span class="entity">node-npmtest-mime-types/mime-types/index.js</span></h1>
+    <h1>Code coverage report for <span class="entity">node-npmtest-mime-types/node_modules/mime-types/index.js</span></h1>
     <h2>
         
         Statements: <span class="metric">50% <small>(32 / 64)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
@@ -210,11 +208,11 @@
         
         Ignored: <span class="metric"><span class="ignore-none">none</span></span> &nbsp;&nbsp;&nbsp;&nbsp;
     </h2>
-    <div class="path"><a href="../../index.html">All files</a> &#187; <a href="index.html">node-npmtest-mime-types/mime-types/</a> &#187; index.js</div>
+    <div class="path"><a href="../../../index.html">All files</a> » <a href="index.html">node-npmtest-mime-types/node_modules/mime-types/</a> » index.js</div>
 </div>
 <div class="body">
 <pre><table class="coverage">
-<tr><td class="line-count">1
+<tbody><tr><td class="line-count">1
 2
 3
 4
@@ -640,25 +638,25 @@ populateMaps(exports.extensions, exports.types)
  * @return {boolean|string}
  */
 &nbsp;
-<span class="fstat-no" title="function not covered" >function charset (type) {</span>
-<span class="cstat-no" title="statement not covered" >  if (!type || typeof type !== 'string') {</span>
-<span class="cstat-no" title="statement not covered" >    return false</span>
+<span class="fstat-no" title="function not covered">function charset (type) {</span>
+<span class="cstat-no" title="statement not covered">  if (!type || typeof type !== 'string') {</span>
+<span class="cstat-no" title="statement not covered">    return false</span>
   }
 &nbsp;
   // TODO: use media-typer
-<span class="cstat-no" title="statement not covered" >  var match = extractTypeRegExp.exec(type)</span>
-<span class="cstat-no" title="statement not covered" >  var mime = match &amp;&amp; db[match[1].toLowerCase()]</span>
+<span class="cstat-no" title="statement not covered">  var match = extractTypeRegExp.exec(type)</span>
+<span class="cstat-no" title="statement not covered">  var mime = match &amp;&amp; db[match[1].toLowerCase()]</span>
 &nbsp;
-<span class="cstat-no" title="statement not covered" >  if (mime &amp;&amp; mime.charset) {</span>
-<span class="cstat-no" title="statement not covered" >    return mime.charset</span>
+<span class="cstat-no" title="statement not covered">  if (mime &amp;&amp; mime.charset) {</span>
+<span class="cstat-no" title="statement not covered">    return mime.charset</span>
   }
 &nbsp;
   // default text/* to utf-8
-<span class="cstat-no" title="statement not covered" >  if (match &amp;&amp; textTypeRegExp.test(match[1])) {</span>
-<span class="cstat-no" title="statement not covered" >    return 'UTF-8'</span>
+<span class="cstat-no" title="statement not covered">  if (match &amp;&amp; textTypeRegExp.test(match[1])) {</span>
+<span class="cstat-no" title="statement not covered">    return 'UTF-8'</span>
   }
 &nbsp;
-<span class="cstat-no" title="statement not covered" >  return false</span>
+<span class="cstat-no" title="statement not covered">  return false</span>
 }
 &nbsp;
 /**
@@ -668,27 +666,27 @@ populateMaps(exports.extensions, exports.types)
  * @return {boolean|string}
  */
 &nbsp;
-<span class="fstat-no" title="function not covered" >function contentType (str) {</span>
+<span class="fstat-no" title="function not covered">function contentType (str) {</span>
   // TODO: should this even be in this module?
-<span class="cstat-no" title="statement not covered" >  if (!str || typeof str !== 'string') {</span>
-<span class="cstat-no" title="statement not covered" >    return false</span>
+<span class="cstat-no" title="statement not covered">  if (!str || typeof str !== 'string') {</span>
+<span class="cstat-no" title="statement not covered">    return false</span>
   }
 &nbsp;
-<span class="cstat-no" title="statement not covered" >  var mime = str.indexOf('/') === -1</span>
+<span class="cstat-no" title="statement not covered">  var mime = str.indexOf('/') === -1</span>
     ? exports.lookup(str)
     : str
 &nbsp;
-<span class="cstat-no" title="statement not covered" >  if (!mime) {</span>
-<span class="cstat-no" title="statement not covered" >    return false</span>
+<span class="cstat-no" title="statement not covered">  if (!mime) {</span>
+<span class="cstat-no" title="statement not covered">    return false</span>
   }
 &nbsp;
   // TODO: use content-type or other module
-<span class="cstat-no" title="statement not covered" >  if (mime.indexOf('charset') === -1) {</span>
-<span class="cstat-no" title="statement not covered" >    var charset = exports.charset(mime)</span>
-<span class="cstat-no" title="statement not covered" >    if (charset) <span class="cstat-no" title="statement not covered" >mime += '; charset=' + charset.toLowerCase()</span></span>
+<span class="cstat-no" title="statement not covered">  if (mime.indexOf('charset') === -1) {</span>
+<span class="cstat-no" title="statement not covered">    var charset = exports.charset(mime)</span>
+<span class="cstat-no" title="statement not covered">    if (charset) <span class="cstat-no" title="statement not covered">mime += '; charset=' + charset.toLowerCase()</span></span>
   }
 &nbsp;
-<span class="cstat-no" title="statement not covered" >  return mime</span>
+<span class="cstat-no" title="statement not covered">  return mime</span>
 }
 &nbsp;
 /**
@@ -698,22 +696,22 @@ populateMaps(exports.extensions, exports.types)
  * @return {boolean|string}
  */
 &nbsp;
-<span class="fstat-no" title="function not covered" >function extension (type) {</span>
-<span class="cstat-no" title="statement not covered" >  if (!type || typeof type !== 'string') {</span>
-<span class="cstat-no" title="statement not covered" >    return false</span>
+<span class="fstat-no" title="function not covered">function extension (type) {</span>
+<span class="cstat-no" title="statement not covered">  if (!type || typeof type !== 'string') {</span>
+<span class="cstat-no" title="statement not covered">    return false</span>
   }
 &nbsp;
   // TODO: use media-typer
-<span class="cstat-no" title="statement not covered" >  var match = extractTypeRegExp.exec(type)</span>
+<span class="cstat-no" title="statement not covered">  var match = extractTypeRegExp.exec(type)</span>
 &nbsp;
   // get extensions
-<span class="cstat-no" title="statement not covered" >  var exts = match &amp;&amp; exports.extensions[match[1].toLowerCase()]</span>
+<span class="cstat-no" title="statement not covered">  var exts = match &amp;&amp; exports.extensions[match[1].toLowerCase()]</span>
 &nbsp;
-<span class="cstat-no" title="statement not covered" >  if (!exts || !exts.length) {</span>
-<span class="cstat-no" title="statement not covered" >    return false</span>
+<span class="cstat-no" title="statement not covered">  if (!exts || !exts.length) {</span>
+<span class="cstat-no" title="statement not covered">    return false</span>
   }
 &nbsp;
-<span class="cstat-no" title="statement not covered" >  return exts[0]</span>
+<span class="cstat-no" title="statement not covered">  return exts[0]</span>
 }
 &nbsp;
 /**
@@ -723,21 +721,21 @@ populateMaps(exports.extensions, exports.types)
  * @return {boolean|string}
  */
 &nbsp;
-<span class="fstat-no" title="function not covered" >function lookup (path) {</span>
-<span class="cstat-no" title="statement not covered" >  if (!path || typeof path !== 'string') {</span>
-<span class="cstat-no" title="statement not covered" >    return false</span>
+<span class="fstat-no" title="function not covered">function lookup (path) {</span>
+<span class="cstat-no" title="statement not covered">  if (!path || typeof path !== 'string') {</span>
+<span class="cstat-no" title="statement not covered">    return false</span>
   }
 &nbsp;
   // get the extension ("ext" or ".ext" or full path)
-<span class="cstat-no" title="statement not covered" >  var extension = extname('x.' + path)</span>
+<span class="cstat-no" title="statement not covered">  var extension = extname('x.' + path)</span>
     .toLowerCase()
     .substr(1)
 &nbsp;
-<span class="cstat-no" title="statement not covered" >  if (!extension) {</span>
-<span class="cstat-no" title="statement not covered" >    return false</span>
+<span class="cstat-no" title="statement not covered">  if (!extension) {</span>
+<span class="cstat-no" title="statement not covered">    return false</span>
   }
 &nbsp;
-<span class="cstat-no" title="statement not covered" >  return exports.types[extension] || false</span>
+<span class="cstat-no" title="statement not covered">  return exports.types[extension] || false</span>
 }
 &nbsp;
 /**
@@ -782,10 +780,11 @@ function populateMaps (extensions, types) {
 }
 &nbsp;
 &nbsp;</pre></td></tr>
-</table></pre>
+</tbody></table></pre>
 </div>
 <div class="footer">
-    <div class="meta">Generated by <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a> at Tue Apr 11 2017 13:40:25 GMT+0000 (UTC)</div>
+    <div class="meta">Generated by <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a> at Mon Apr 17 2017 21:29:41 GMT+0000 (UTC)</div>
 </div>
-</body>
-</html>
+
+
+</body></html>
