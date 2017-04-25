@@ -1,4 +1,7 @@
-# test coverage for  [mime-types (v2.1.15)](https://github.com/jshttp/mime-types#readme)  [![npm package](https://img.shields.io/npm/v/npmtest-mime-types.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-mime-types) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-mime-types.svg)](https://travis-ci.org/npmtest/node-npmtest-mime-types)
+# npmtest-mime-types
+
+#### basic test coverage for  [mime-types (v2.1.15)](https://github.com/jshttp/mime-types#readme)  [![npm package](https://img.shields.io/npm/v/npmtest-mime-types.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-mime-types) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-mime-types.svg)](https://travis-ci.org/npmtest/node-npmtest-mime-types)
+
 #### The ultimate javascript content-type utility.
 
 [![NPM](https://nodei.co/npm/mime-types.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/mime-types)
@@ -7,7 +10,7 @@
 |--:|:--|
 | coverage : | [![istanbul-coverage](https://npmtest.github.io/node-npmtest-mime-types/build/coverage.badge.svg)](https://npmtest.github.io/node-npmtest-mime-types/build/coverage.html/index.html)|
 | test-report : | [![test-report](https://npmtest.github.io/node-npmtest-mime-types/build/test-report.badge.svg)](https://npmtest.github.io/node-npmtest-mime-types/build/test-report.html)|
-| build-artifacts : | [![build-artifacts](https://npmtest.github.io/node-npmtest-mime-types/glyphicons_144_folder_open.png)](https://github.com/npmtest/node-npmtest-mime-types/tree/gh-pages/build)|
+| test-server-github : | [![github.com test-server](https://npmtest.github.io/node-npmtest-mime-types/GitHub-Mark-32px.png)](https://npmtest.github.io/node-npmtest-mime-types/build/app/index.html) | | build-artifacts : | [![build-artifacts](https://npmtest.github.io/node-npmtest-mime-types/glyphicons_144_folder_open.png)](https://github.com/npmtest/node-npmtest-mime-types/tree/gh-pages/build)|
 
 - [https://npmtest.github.io/node-npmtest-mime-types/build/coverage.html/index.html](https://npmtest.github.io/node-npmtest-mime-types/build/coverage.html/index.html)
 
@@ -103,7 +106,8 @@
         "test-cov": "istanbul cover node_modules/mocha/bin/_mocha -- --reporter dot test/test.js",
         "test-travis": "istanbul cover node_modules/mocha/bin/_mocha --report lcovonly -- --reporter dot test/test.js"
     },
-    "version": "2.1.15"
+    "version": "2.1.15",
+    "bin": {}
 }
 ```
 
